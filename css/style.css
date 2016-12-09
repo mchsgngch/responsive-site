@@ -20,23 +20,24 @@ body {
 
 /* Layout
 ------------------------------------------------------------*/
-.block-center, section .container, #skills i {
+.block-center, section .container, footer p {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
 /* Font
 ------------------------------------------------------------*/
-.abel, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+.abel, section h2, #skills h3, footer h2 {
   font-family: 'Abel', sans-serif; }
 
-.uppercase, section h2, #skills h3, #works .works-box a .works-box-inner .button-readmore {
+.uppercase, section h2, #skills h3, footer h2 {
   text-transform: uppercase; }
 
 /* Header
 ------------------------------------------------------------*/
 header {
   background-image: url('/images/../images/web-design.jpg');
+  width: 100%;
   height: 500px;
   background-size: cover;
   background-position: center center; }
@@ -51,145 +52,62 @@ section {
     font-size: 3.2rem; }
 
 #skills {
-  background-color: #bea300; }
+  background-color: #EDD6AE; }
   #skills .container {
     display: -webkit-flex;
     display: flex;
     justify-content: space-between; }
   #skills h2 {
-    color: #fdfcf6;
+    color: #4c4c4c;
     margin-bottom: 60px; }
-  #skills .skill-box {
+  #skills .skill-box1 {
     -webkit-flex: 1;
     flex: 1;
-    margin: 10px 0;
-    padding: 20px;
-    background-color: #fdfcf6;
-    -moz-border-radius: 4px;
+    background-color: #CC9821;
+    -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
-  #skills i {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 5px;
-    padding-top: 15px;
-    background-color: #14c0c9;
-    font-size: 4.5rem;
-    color: #FFF;
-    text-align: center;
+    border-radius: 4px 4px 0 0;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%; }
+    margin: 0 10px;
+    padding: 20px; }
+  #skills .skill-box2 {
+    -webkit-flex: 1;
+    flex: 1;
+    background-color: #fdfcf6;
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0;
+    border-radius: 0 0 4px 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 10px;
+    padding: 20px; }
   #skills h3 {
-    color: #14c0c9;
+    color: #fdfcf6;
     margin-bottom: 10px;
     font-size: 2.4rem;
     font-weight: bold; }
 
-#works {
-  padding-bottom: 0; }
-  #works h2 {
-    margin-bottom: 50px; }
-  #works .works-box {
-    width: 33.33333%;
-    float: left;
-    height: 100%; }
-    #works .works-box a {
-      display: block;
-      position: relative; }
-      #works .works-box a .works-box-inner {
-        background-color: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        height: 100%;
-        top: 0;
-        left: 0;
-        color: #FFF;
-        display: none; }
-        #works .works-box a .works-box-inner div {
-          position: absolute;
-          margin: auto;
-          height: 40%;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 10px 20px; }
-        #works .works-box a .works-box-inner h3 {
-          font-size: 1.6rem;
-          margin: 0 0 5px;
-          font-weight: bold; }
-        #works .works-box a .works-box-inner small {
-          font-size: 1rem;
-          display: block;
-          margin-bottom: 15px; }
-        #works .works-box a .works-box-inner .button-readmore {
-          margin: auto;
-          text-align: center;
-          padding: 5px 0;
-          width: 180px;
-          display: block;
-          color: #FFF;
-          font-weight: bold;
-          background-color: #14c0c9;
-          -moz-border-radius: 4px;
-          -webkit-border-radius: 4px;
-          border-radius: 4px;
-          font-size: 1rem; }
-          #works .works-box a .works-box-inner .button-readmore:hover {
-            background-color: #0f949b; }
-      #works .works-box a:hover .works-box-inner {
-        display: block;
-        width: 100%; }
-    #works .works-box img {
-      max-width: 100%;
-      display: block; }
-  #works::after {
-    content: '';
-    display: block;
-    clear: both; }
-
-#contact ul {
-  text-align: center;
-  margin-top: 60px; }
-  #contact ul li {
-    display: inline-block;
-    font-size: 2.8rem;
-    text-align: center;
-    margin-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    vertical-align: top; }
-    #contact ul li:last-child {
-      margin-right: 0; }
-  #contact ul .github, #contact ul .skype {
-    font-size: 3.2rem; }
-  #contact ul .github i {
-    margin-left: 2px; }
-  #contact ul a {
-    display: block;
-    width: 50px;
-    height: 50px;
-    color: #FFF;
-    background-color: #14c0c9;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%; }
-    #contact ul a:hover {
-      background-color: #0f949b; }
-
 /* Footer
 ------------------------------------------------------------*/
 footer {
-  background-color: #bea300;
-  padding: 10px 0;
+  padding: 60px 0;
+  background-color: #fdfcf6;
   text-align: center;
-  color: #FFF; }
+  color: #4c4c4c;
+  height: 300px; }
+  footer h2 {
+    font-size: 3.2rem;
+    margin-bottom: 60px; }
+  footer p {
+    padding: 20px;
+    background-color: #CC9821;
+    width: 20%;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #FFF; }
 
 /*# sourceMappingURL=style.css.map */
