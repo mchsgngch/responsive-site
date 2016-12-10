@@ -54,9 +54,7 @@ header {
   height: 500px;
   background-size: cover;
   background-position: center center;
-}
-@media (max-width: 768px) {
-  header {
+  @media (max-width: 768px) {
     height: 250px;
   }
 }
@@ -83,20 +81,8 @@ section {
   .container {
     @include display-flex;
     justify-content: space-between;
-    @include flex-direction(row);
+    @include flex-direction(column);
   }
-  @media (min-width: 769px) {
-    #skills {
-      .container {
-        @include flex-direction(colum);
-        justify-content: space-between;
-        .skill-box {
-          margin: 10 0px;                   
-        }
-      }
-  }
-  }
-
   h2 {
     color: $fontColor; 
     margin-bottom: 60px;
@@ -108,7 +94,6 @@ section {
     @include box-sizing(border-box);
     padding: 0;
     margin: 10px 0;
-
   }
   h3 {
     @extend .abel;
@@ -127,8 +112,16 @@ section {
     padding: 20px;
     @include border-radius(0 0 4px 4px);
   }
+    @media (min-width: 769px) {
+    .container {
+      @include flex-direction(row);
+      justify-content: space-between;
+    }
+    .skill-box{
+        margin: 0 10px;                   
+    }
+  }
 }
-
 /* Footer
 ------------------------------------------------------------*/
 // Contact
@@ -145,12 +138,21 @@ footer {
     margin-bottom: 60px;
 
    }
-    p {
+    a {
       @extend .block-center;
       padding: 20px;
-      background-color:$keyColor;
+      background-color: $keyColor;
       width: 20%;
       @include border-radius(4px);
       color: #FFF;
+      text-decoration: none;
+      @media (min-width: 769px){
+        &:hover{
+          background-color: darken($keyColor,10%);
+        }
+        &:active{
+          background-color: lighten($keyColor,10%);
+        }
+      }
     }
 }
